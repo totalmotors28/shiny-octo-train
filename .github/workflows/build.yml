@@ -29,8 +29,9 @@ jobs:
           cache: true
 
       # ДОБАВЛЯЕМ ЭТУ СТРОКУ: генерируем андроид-окружение для проекта
-      - name: Generate Android platform
-        run: flutter create . --platforms=android
+            - name: Generate Android platform
+            run: flutter create . --platforms=android --project-name=neon_arcade_clicker
+
 
       - name: Install dependencies
         run: flutter pub get
